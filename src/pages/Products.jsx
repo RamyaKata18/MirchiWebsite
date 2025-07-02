@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './products.css';
+import './Products.css';
 
 const weights = [
   { label: '500g', value: '0.5' },
