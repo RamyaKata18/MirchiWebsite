@@ -1,0 +1,69 @@
+.home {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.banner-slider {
+  margin-bottom: 20px;
+}
+
+.banner-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Dots styling */
+.slick-dots li button:before {
+  color: #e63946 !important;
+  font-size: 12px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #2d6a4f !important;
+}
+
+/* Content below slider */
+.home-content {
+  margin-top: 30px;
+  animation: slideUp 1s ease-out;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInText 1s ease-in forwards;
+}
+
+@keyframes fadeInText {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.shop-button {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #e63946;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.shop-button:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
+
+.shop-button.glow {
+  box-shadow: 0 0 12px rgba(230, 57, 70, 0.5);
+}
